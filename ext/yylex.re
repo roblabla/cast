@@ -91,7 +91,7 @@ void yylex(VALUE self, cast_Parser *p) {
     P        = [Pp] [+-]? D+;
     FS       = [fFlL];
     IS       = [uU] ([lL] | "ll" | "LL")? | ([lL] | "ll" | "LL") [uU]?;
-    ESC      = [\\] ([abefnrtv?'"\\] | O (O O?)? | "x" H+);
+    ESC      = [\\] ([abfnrtv?'"\\] | O (O O?)? | "x" H+);
   */
   /*!re2c
     "/*"         { goto comment; }
